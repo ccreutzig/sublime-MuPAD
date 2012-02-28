@@ -10,14 +10,15 @@
     <dict>
       <key>decreaseIndentPattern</key>
       <string>(?x)
-        ^ \s* \b(end_if|end_while|else)\b .* $
-        |   ^ \s* (then|else|elsif)\b .* $
+        ^ \s* (end_proc|end_domain|end_category|end_axiom|end_for|end_while|end_repeat|end_case) \s* $
+        |   ^ \s* (end|end_if|end_while|end_for)\b .* $
+        |   ^ \s* (then|else|elsif|until)\b .* $
       </string>
       <key>increaseIndentPattern</key>
       <string>(?x)
         ^ \s* (proc|domain|category|axiom|for|while|repeat|case) \s* $
-        | 	^ \s* \b(if|while)\b .* $
-        |   ^ \s* (then|else|elsif)\b .* $
+        | 	^ \s* \b(if|while|for)\b .* $
+        |   ^ \s* (then|else|elsif|until)\b .* $
       </string>
 
       <key>indentSquareBrackets</key>
