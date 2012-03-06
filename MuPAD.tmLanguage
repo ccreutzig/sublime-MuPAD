@@ -54,7 +54,7 @@
         <key>match</key>
         <string>\b([a-zA-Z_#]\w*|`.*?`)\b</string>
         <key>name</key>
-        <string>entity.name.tag.mupad</string>
+        <string>entity.name.variable.mupad</string>
       </dict>
       <dict>
         <key>captures</key>
