@@ -1,5 +1,5 @@
 {
   "alignment_prefix_chars": [
-    ":"
+    ":", "<", ">"
   ]
 }
