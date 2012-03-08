@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+if ${1:cond}) then
+  ${2:// body}
+${3:else
+  ${4:// body}
+}end_if;
+]]></content>
+  <tabTrigger>if</tabTrigger>
+  <scope>source.mupad</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+for ${1:i} in ${2:setOrList} do
+  ${3:// body}
+end_for;
+]]></content>
+  <tabTrigger>forin</tabTrigger>
+  <scope>source.mupad</scope>
+</snippet>

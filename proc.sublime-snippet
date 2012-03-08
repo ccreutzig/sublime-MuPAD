@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+proc(${1:arguments})
+  ${2:local ${3:local1, local2};
+}begin
+  ${4:// body}
+end_proc:
+]]></content>
+  <tabTrigger>proc</tabTrigger>
+  <scope>source.mupad</scope>
+</snippet>
