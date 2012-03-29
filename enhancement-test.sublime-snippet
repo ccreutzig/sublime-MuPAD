@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+/// SUMMARY:             ${1}
+/// GECK:                g${2}
+/// REPRODUCTIONSTEPS:      
+
+prog::test(
+  ${3:1},
+  ${4:0},
+  Enhancement = ${5:2},
+  ${6:Message = "${7}",
+  }BugId = g${2},
+  Timeout = ${8:10}*prog::ntime()
+):
+/// END
+]]></content>
+  <tabTrigger>enh</tabTrigger>
+  <scope>source.mupad</scope>
+</snippet>
+
+
