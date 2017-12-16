@@ -13,21 +13,6 @@
     <string>\b(proc|domain|case|if|%if|for|while|repeat)\b</string>
     <key>foldingStopMarker</key>
     <string>\b(end|end_proc|end_domain|end_case|end_if|end_for|end_while|end_repeat)\b</string>
-    <key>highlightPairs</key>
-    <array>
-      <array>
-        <string>(</string>
-        <string>)</string>
-      </array>
-      <array>
-        <string>[</string>
-        <string>]</string>
-      </array>
-      <array>
-        <string>{</string>
-        <string>}</string>
-      </array>
-    </array>
     <key>name</key>
     <string>MuPAD</string>
     <key>patterns</key>
@@ -193,25 +178,6 @@
     </dict>
     <key>scopeName</key>
     <string>source.mupad</string>
-    <key>smartTypingPairs</key>
-    <array>
-      <array>
-        <string>(</string>
-        <string>)</string>
-      </array>
-      <array>
-        <string>[</string>
-        <string>]</string>
-      </array>
-      <array>
-        <string>{</string>
-        <string>}</string>
-      </array>
-      <array>
-        <string>&quot;</string>
-        <string>&quot;</string>
-      </array>
-    </array>
     <key>uuid</key>
     <string>341D8B40-5DAB-476A-B0CD-90D87D735E33</string>
   </dict>
