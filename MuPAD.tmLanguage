@@ -18,6 +18,25 @@
     <key>patterns</key>
     <array>
       <dict>
+        <key>begin</key>
+        <string>//</string>
+        <key>end</key>
+        <string>$</string>
+        <key>name</key>
+        <string>comment.line.double-slash.mupad</string>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>include</key>
+            <string>text.plain</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>include</key>
+        <string>#blockcomment</string>
+      </dict>
+      <dict>
         <key>match</key>
         <string>\b(axiom|end_axiom|category|end_category|begin|break|case|do|downto|elif|else|end_case|end_for|end_if|end_proc|end_repeat|end_while|for|from|if|%if|local|name|next|of|option|otherwise|proc|quit|repeat|save|step|then|to|until|while|domain|end|inherits|end_domain)\b</string>
         <key>name</key>
@@ -25,9 +44,27 @@
       </dict>
       <dict>
         <key>match</key>
-        <string>\b(and|div|in|intersect|minus|mod|not|or|union|xor|-&gt;|--&gt;|\+|-|\*|/|&gt;|&lt;|&lt;&gt;|=|&lt;=&gt;|&lt;==|==&gt;|\|)\b</string>
+        <string>\b(intersect|minus|union)\b|-&gt;|--&gt;|\.</string>
         <key>name</key>
         <string>keyword.operator.mupad</string>
+      </dict>
+      <dict>
+        <key>match</key>
+        <string>\b(div|mod)\b|\+|-|\*|/|\^|\|</string>
+        <key>name</key>
+        <string>keyword.operator.arithmetic.mupad</string>
+      </dict>
+      <dict>
+        <key>match</key>
+        <string>\b(and|in|not|or|xor)\b|&gt;|&lt;|&lt;&gt;|=|&lt;=&gt;|&lt;==|==&gt;|\|\||&amp;&amp;</string>
+        <key>name</key>
+        <string>keyword.operator.logical.mupad</string>
+      </dict>
+      <dict>
+        <key>match</key>
+        <string>:=</string>
+        <key>name</key>
+        <string>keyword.operator.assignment.mupad</string>
       </dict>
       <dict>
         <key>match</key>
@@ -103,25 +140,6 @@
         <string>\b(([0-9]+\.?[0-9]*)((e|E)(\+|-)?[0-9]+)?)\b</string>
         <key>name</key>
         <string>constant.numeric.mupad</string>
-      </dict>
-      <dict>
-        <key>begin</key>
-        <string>//</string>
-        <key>end</key>
-        <string>$</string>
-        <key>name</key>
-        <string>comment.line.double-slash.mupad</string>
-        <key>patterns</key>
-        <array>
-          <dict>
-            <key>include</key>
-            <string>text.plain</string>
-          </dict>
-        </array>
-      </dict>
-      <dict>
-        <key>include</key>
-        <string>#blockcomment</string>
       </dict>
       <dict>
         <key>begin</key>
