@@ -68,6 +68,24 @@
       </dict>
       <dict>
         <key>match</key>
+        <string>::</string>
+        <key>name</key>
+        <string>punctuation.accessor.mupad</string>
+      </dict>
+      <dict>
+        <key>match</key>
+        <string>;</string>
+        <key>name</key>
+        <string>punctuation.terminator.mupad</string>
+      </dict>
+      <dict>
+        <key>match</key>
+        <string>,</string>
+        <key>name</key>
+        <string>punctuation.separator.mupad</string>
+      </dict>
+      <dict>
+        <key>match</key>
         <string>\b(E|FAIL|FALSE|I|NIL|TRUE|UNKNOWN|PI|EULER|CATALAN|infinity|undefined)\b</string>
         <key>name</key>
         <string>constant.language.mupad</string>
